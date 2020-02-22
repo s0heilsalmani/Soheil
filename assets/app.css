@@ -1,0 +1,33 @@
+.image img {
+    width: 385px;
+    height: 380px;
+    object-fit: cover;
+}
+
+.about {
+    margin-left: 190px;
+}
+
+.about h1 {
+    font-size: 80px;
+}
+
+.about .p-1 {
+    font-size: 46px;
+}
+
+.about .p-2 {
+    font-size: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+h4 {
+    color: white;
+}
+
+p {
+    color: white;
+}
