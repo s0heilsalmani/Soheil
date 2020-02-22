@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans|Trade+Winds|Vesper+Libre&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <!-- Styles -->
     <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="assets/app.js">
+    <!-- Sidebar -->
 
     <title>Soheil</title>
 </head>
@@ -20,7 +25,7 @@
 
         <div class="ml-5">
             <h1 class="text-danger">Soheil Salmani</h1>
-            <h4>Future Computer scientist</h4>
+            <h4 class="harchi">Future Computer scientist</h4>
         </div>
 
         <div class="d-flex align-items-center">
@@ -29,13 +34,39 @@
                 <img class="rounded-circle" src="assets/Images/Soheil.jpg">
             </div>
 
+            <!--Sidebar-->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <!-- Use any element to open the sidenav -->
+            <span onclick="openNav()">open</span>
+
+            <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+            <div id="main">
+                ...
+            </div>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                }
+
+                /* Set the width of the side navigation to 0 */
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+
             <!-- About -->
             <div class="about">
                 <h1>Hello,</h1>
                 <p class="p-1">a bit about me ;</p>
-                <p class="p-2">a bit about me:a bit about me:a bit about me:a bit about me:a bit about me:a bit about
-                    me:
-                    a bit about me:a bit about me:a bit about me:a bit about me:
+                <p class="p-2">I'm a 18 year old Computer enthusiast who is looking forward to study computer science in
+                    canada.
                 </p>
             </div>
         </div>
@@ -52,7 +83,7 @@
                 <i class="fab fa-github"></i>
             </a>
             <!-- twitter -->
-            <a class="text-dark ml-2" title="Twitter" target="_blank" href="https://github.com/soheilsalmani10">
+            <a class="text-dark ml-2" title="Twitter" target="_blank" href="https://twitter.com/soheilsalmani10">
                 <i class="fab fa-twitter"></i>
             </a>
             <!-- Email -->
@@ -61,6 +92,7 @@
             </a>
         </h1>
     </footer>
+
 
 
     <!-- Optional JavaScript -->
