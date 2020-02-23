@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <!-- Styles -->
     <link rel="stylesheet" href="assets/app.css">
-    <link rel="stylesheet" href="assets/app.js">
+    <script type="text/javascript" src="assets/app.js"></script>
     <!-- Sidebar -->
 
     <title>Soheil</title>
@@ -21,6 +21,26 @@
 
 
 <body class="bg-dark">
+    <!--Sidebar-->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Jesus</a>
+        <a href="#">Christ</a>
+
+        <div class="main"></div>
+
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <a onclick="openNav()">
+        <i class="fas fa-bars bars ml-3 mt-2"></i>
+    </a>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+    </div>
+
+
     <div class="container py-5">
 
         <div class="ml-5">
@@ -33,33 +53,6 @@
             <div class="image mt-5">
                 <img class="rounded-circle" src="assets/Images/Soheil.jpg">
             </div>
-
-            <!--Sidebar-->
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
-            </div>
-
-            <!-- Use any element to open the sidenav -->
-            <span onclick="openNav()">open</span>
-
-            <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-            <div id="main">
-                ...
-            </div>
-            <script>
-                function openNav() {
-                    document.getElementById("mySidenav").style.width = "250px";
-                }
-
-                /* Set the width of the side navigation to 0 */
-                function closeNav() {
-                    document.getElementById("mySidenav").style.width = "0";
-                }
-            </script>
 
             <!-- About -->
             <div class="about">
