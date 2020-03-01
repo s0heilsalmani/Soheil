@@ -98,3 +98,16 @@ p {
 .bars:hover {
   cursor: pointer;
 }
+
+.clips-title {
+  font-size: 100px;
+  letter-spacing: 25px;
+}
+
+iframe {
+  border: none;
+}
+
+.masalan {
+  letter-spacing: 5px;
+}
